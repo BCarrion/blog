@@ -10,7 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/categories', 'BlogCategory\Http\Controllers\BlogCategoryController@index');
+Route::get('/groups', 'SecurityGroup\Http\Controllers\SecurityGroupController@index');
 Route::get('/', function () {
     return view('welcome');
 });
