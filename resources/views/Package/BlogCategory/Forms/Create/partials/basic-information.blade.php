@@ -1,10 +1,10 @@
- <div class="col-md-7">
- 	<div class="form-group">
-	 	<label for="email">Category Name</label>
-	 	<input type="text" name="name" class="form-control" id="email">
- 	</div>
- 	<div class="form-group">
-	 	<label for="pwd">Description:</label>
-	 	<textarea name="description" class="form-control" rows="9"></textarea>
- 	</div>
- </div>
+<div class="col-md-7">
+    <div class="form-group">
+        <label for="email">Category Name</label>
+        {!! Form::text('name', old('name'),['class'=>'form-control','placeholder'=>'type a category name']) !!}
+    </div>
+    <div class="form-group">
+        <label for="pwd">Description:</label>
+        {!! Form::textarea('description', old('description'),['class'=>'form-control']) !!}
+    </div>
+</div>

@@ -10,7 +10,7 @@
                 <div class="panel-heading">Categories</div>
                 @include('Package.BlogCategory.partials-index.table')
             </div>
-            {{ $blogCategories->links() }}
+
         </div>
     </div>
 @endsection

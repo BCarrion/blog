@@ -20,7 +20,7 @@ class CreateBlogCategoriesTable extends Migration
             $table->increments('id')->unsigned();
             $table->string('name',45);
             $table->string('description',255)->nullable();
-            $table->string('visibility', 255);
+            $table->string('visibility'. 45);
             $table->integer('parent_name')->unsigned();
 
             // ---------------------------

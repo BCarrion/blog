@@ -18,5 +18,24 @@ window.Vue = require('vue');
 Vue.component('example', require('./components/Example.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    data:{
+        colaborators:[],
+        groups:[]
+    },
+    methods:{
+        // Delete an element by id
+        deleteItem: function(id, option){
+
+            if(option.localeCompare("colaborators")=== 0){
+                this.colaborators.splice(id, 1);
+            }
+            else if(option.localeCompare("groups")=== 0){
+                this.groups.splice(id, 1);
+            }
+
+
+        }
+    }
+
 });
